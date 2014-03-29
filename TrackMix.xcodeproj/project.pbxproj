@@ -18,6 +18,7 @@
 		C55FD62F18CFF0290076342C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C55FD60E18CFF0290076342C /* Cocoa.framework */; };
 		C55FD63718CFF0290076342C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C55FD63518CFF0290076342C /* InfoPlist.strings */; };
 		C55FD63918CFF0290076342C /* TrackMixTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C55FD63818CFF0290076342C /* TrackMixTests.m */; };
+		C58396C518E764E500972329 /* Track.m in Sources */ = {isa = PBXBuildFile; fileRef = C58396C418E764E500972329 /* Track.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		C55FD63418CFF0290076342C /* TrackMixTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TrackMixTests-Info.plist"; sourceTree = "<group>"; };
 		C55FD63618CFF0290076342C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C55FD63818CFF0290076342C /* TrackMixTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackMixTests.m; sourceTree = "<group>"; };
+		C58396C318E764E500972329 /* Track.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Track.h; sourceTree = "<group>"; };
+		C58396C418E764E500972329 /* Track.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Track.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				C55FD62318CFF0290076342C /* MainMenu.xib */,
 				C55FD62618CFF0290076342C /* Images.xcassets */,
 				C55FD61518CFF0290076342C /* Supporting Files */,
+				C58396C318E764E500972329 /* Track.h */,
+				C58396C418E764E500972329 /* Track.m */,
 			);
 			path = TrackMix;
 			sourceTree = "<group>";
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C58396C518E764E500972329 /* Track.m in Sources */,
 				C55FD62218CFF0290076342C /* AppDelegate.m in Sources */,
 				C55FD61B18CFF0290076342C /* main.m in Sources */,
 			);
@@ -464,6 +470,7 @@
 				C55FD63E18CFF0290076342C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C55FD63F18CFF0290076342C /* Build configuration list for PBXNativeTarget "TrackMixTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +479,7 @@
 				C55FD64118CFF0290076342C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
