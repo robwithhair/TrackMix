@@ -656,7 +656,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="231" height="360"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <slider horizontalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tdd-tH-tJr">
+                    <slider horizontalHuggingPriority="750" verticalHuggingPriority="750" placeholderIntrinsicWidth="16" placeholderIntrinsicHeight="221" translatesAutoresizingMaskIntoConstraints="NO" id="Tdd-tH-tJr">
                         <rect key="frame" x="105" y="58" width="20" height="226"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" continuous="YES" alignment="left" maxValue="11" doubleValue="5" tickMarkPosition="left" sliderType="linear" id="HC8-QD-juf"/>
@@ -664,7 +664,7 @@
                             <action selector="takeFloatValueForVolumeFrom:" target="494" id="ggx-QW-cTj"/>
                         </connections>
                     </slider>
-                    <textField verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ype-H0-Zjf">
+                    <textField verticalHuggingPriority="750" placeholderIntrinsicWidth="191" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="Ype-H0-Zjf">
                         <rect key="frame" x="20" y="290" width="191" height="50"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="center" title="5" drawsBackground="YES" id="fd7-JK-shv">
@@ -680,13 +680,9 @@
                             <action selector="takeFloatValueForVolumeFrom:" target="494" id="nBD-Xb-oLl"/>
                         </connections>
                     </textField>
-                    <button verticalHuggingPriority="750" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Ol-N9-h3D">
-                        <rect key="frame" x="74" y="13" width="72" height="32"/>
+                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="1Ol-N9-h3D">
+                        <rect key="frame" x="79" y="13" width="72" height="32"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="21" id="3LH-SF-KXJ"/>
-                            <constraint firstAttribute="width" constant="60" id="sgn-ph-aTh"/>
-                        </constraints>
                         <buttonCell key="cell" type="push" title="Mute" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="ZtD-Xk-0g5">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
@@ -697,16 +693,16 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="1Ol-N9-h3D" firstAttribute="top" secondItem="Tdd-tH-tJr" secondAttribute="bottom" constant="20" id="4GB-Jz-vVK"/>
                     <constraint firstItem="Ype-H0-Zjf" firstAttribute="top" secondItem="372" secondAttribute="top" constant="20" id="8K4-qi-blj"/>
-                    <constraint firstAttribute="centerX" secondItem="1Ol-N9-h3D" secondAttribute="centerX" id="Cfs-Lz-0u4"/>
                     <constraint firstItem="Ype-H0-Zjf" firstAttribute="leading" secondItem="372" secondAttribute="leading" constant="20" id="Dh9-eJ-3HE"/>
-                    <constraint firstAttribute="bottom" secondItem="1Ol-N9-h3D" secondAttribute="bottom" constant="20" id="EUp-Ix-IOt"/>
                     <constraint firstItem="Tdd-tH-tJr" firstAttribute="top" secondItem="Ype-H0-Zjf" secondAttribute="bottom" constant="8" id="P3o-N3-ND5"/>
                     <constraint firstAttribute="centerX" secondItem="Tdd-tH-tJr" secondAttribute="centerX" id="RIE-ub-yae"/>
-                    <constraint firstItem="1Ol-N9-h3D" firstAttribute="top" secondItem="Tdd-tH-tJr" secondAttribute="bottom" constant="20" id="cws-9Q-aVf"/>
                     <constraint firstAttribute="trailing" secondItem="Ype-H0-Zjf" secondAttribute="trailing" constant="20" id="lwS-BJ-mo1"/>
+                    <constraint firstAttribute="bottom" secondItem="1Ol-N9-h3D" secondAttribute="bottom" constant="20" symbolic="YES" id="maq-Zc-neR"/>
+                    <constraint firstAttribute="centerX" secondItem="Tdd-tH-tJr" secondAttribute="centerX" id="qZR-8k-6oM"/>
+                    <constraint firstItem="1Ol-N9-h3D" firstAttribute="top" secondItem="Tdd-tH-tJr" secondAttribute="bottom" constant="20" symbolic="YES" id="sUi-zV-vfl"/>
                     <constraint firstAttribute="centerX" secondItem="Ype-H0-Zjf" secondAttribute="centerX" id="su5-KI-1td"/>
+                    <constraint firstAttribute="centerX" secondItem="1Ol-N9-h3D" secondAttribute="centerX" id="wkX-BA-xzc"/>
                 </constraints>
             </view>
         </window>
